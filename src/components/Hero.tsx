@@ -93,8 +93,13 @@ export const Hero: React.FC = () => {
             >
               <motion.a
                 href={DETAILS.bookingLink}
+                data-cal-link={DETAILS.calSlug}
+                data-cal-namespace="20-minute-intro-call"
+                data-cal-config='{"layout":"month_view"}'
                 target="_blank"
                 rel="noopener noreferrer"
+                role="button"
+                aria-label="Book a free audit call"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center justify-center px-8 py-4 rounded-full text-base sm:text-lg font-bold tracking-tight bg-[#FFB020] text-[#18181B] shadow-lg shadow-[#FFB020]/20 hover:shadow-xl hover:shadow-[#FFB020]/30 transition-all duration-200"

@@ -13,9 +13,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Cal.com Embed Loader -->
+    <script>
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin:"https://cal.com"});
+      Cal("ui", {"styles":{"branding":{"brandColor":"#FFB020"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
   </head>
   <body class="bg-[#F6F5F1] text-[#18181B] antialiased selection:bg-[#FFB020] selection:text-[#18181B]">
-    <div id="root"></div>
+    <div id="root">
+      <noscript>
+        <div style="text-align: center; padding: 40px; font-family: sans-serif;">
+          <h1>VakilDesk | Court Hours Callback Fix for Solo Advocates in Chittoor</h1>
+          <p>When you cannot take calls during hearings, an instant WhatsApp message acknowledges your caller and lets them book a time to talk.</p>
+          <a href="https://cal.com/murali-krishna-s3ai/20-minute-intro-call" data-cal-link="murali-krishna-s3ai/20-minute-intro-call" style="display: inline-block; padding: 14px 28px; background: #FFB020; color: #18181B; font-weight: bold; border-radius: 9999px; text-decoration: none;">Book a free audit call</a>
+        </div>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

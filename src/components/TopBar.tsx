@@ -83,8 +83,13 @@ export const TopBar: React.FC = () => {
           {/* Top Bar Call CTA */}
           <motion.a
             href={DETAILS.bookingLink}
+            data-cal-link={DETAILS.calSlug}
+            data-cal-namespace="20-minute-intro-call"
+            data-cal-config='{"layout":"month_view"}'
             target="_blank"
             rel="noopener noreferrer"
+            role="button"
+            aria-label="Book a free audit call"
             whileHover={{ scale: 1.03, y: -1 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center justify-center px-3 sm:px-5 py-1.5 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide bg-[#FFB020] text-[#18181B] shadow-sm hover:shadow-md transition-shadow shrink-0"

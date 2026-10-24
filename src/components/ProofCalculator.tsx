@@ -206,8 +206,13 @@ export const ProofCalculator: React.FC = () => {
                   {/* Call to action button */}
                   <motion.a
                     href={DETAILS.bookingLink}
+                    data-cal-link={DETAILS.calSlug}
+                    data-cal-namespace="20-minute-intro-call"
+                    data-cal-config='{"layout":"month_view"}'
                     target="_blank"
                     rel="noopener noreferrer"
+                    role="button"
+                    aria-label="Book a free audit call"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-full text-base font-bold bg-[#FFB020] text-[#18181B] shadow-md hover:shadow-lg transition-all"

@@ -6,6 +6,7 @@ export const DETAILS = {
   state: 'Andhra Pradesh',
   whoIHelp: 'solo advocates in Chittoor',
   bookingLink: 'https://cal.com/murali-krishna-s3ai/20-minute-intro-call',
+  calSlug: 'murali-krishna-s3ai/20-minute-intro-call',
   currency: '₹',
   setupItems: [
     {
