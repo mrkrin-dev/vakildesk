@@ -1,0 +1,8 @@
+{
+  "name": "VakilDesk",
+  "description": "The Court Hours Callback Fix for solo advocates in Chittoor. When you cannot answer calls during court sessions, WhatsApp greets your client and lets them book a consultation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Space Grotesk', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+  
+  --color-charcoal-dark: #111113;
+  --color-charcoal: #18181B;
+  --color-charcoal-light: #27272A;
+  --color-charcoal-border: #3F3F46;
+  --color-warm-white: #F6F5F1;
+  --color-saffron: #FFB020;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #F6F5F1;
+  color: #18181B;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
