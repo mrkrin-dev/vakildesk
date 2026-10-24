@@ -177,20 +177,20 @@ export const RealMobilePhone: React.FC = () => {
         ))}
       </div>
 
-      {/* Realistic Smartphone Container with Subtle Outer Drop Shadow and Soft Inner Gradient */}
-      <div className="relative w-full max-w-[340px] sm:max-w-[370px] aspect-[390/800] select-none">
+      {/* Realistic Smartphone Container with Subtle Outer Drop Shadow and Soft Inner Gradient (reduced by 10%) */}
+      <div className="relative w-full max-w-[306px] sm:max-w-[333px] aspect-[390/800] select-none">
         
         {/* Physical Floating Outer Drop Shadow */}
-        <div className="absolute inset-0 rounded-[52px] shadow-[0_30px_70px_-10px_rgba(0,0,0,0.95),0_14px_32px_-6px_rgba(0,0,0,0.8),0_0_55px_rgba(255,176,32,0.07)] pointer-events-none" />
+        <div className="absolute inset-0 rounded-[52px] shadow-[0_28px_65px_-10px_rgba(0,0,0,0.95),0_12px_28px_-6px_rgba(0,0,0,0.8),0_0_50px_rgba(255,176,32,0.06)] pointer-events-none" />
 
-        {/* Screen Display Content with soft inner depth and rounded corners */}
-        <div className="absolute inset-[8px] rounded-[44px] overflow-hidden bg-[#0B141A] flex flex-col z-10 shadow-[inset_0_0_24px_rgba(0,0,0,0.7)]">
+        {/* Screen Display Content with soft inner depth, hardware-accelerated clipping, and rounded corners */}
+        <div className="absolute inset-[8px] rounded-[44px] overflow-hidden bg-[#0B141A] flex flex-col z-10 shadow-[inset_0_0_24px_rgba(0,0,0,0.7)] [isolation:isolate] [transform:translateZ(0)] [contain:paint]">
           
           {/* Soft inner gradient overlay across the screen glass */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/35 pointer-events-none z-25" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/[0.04] via-transparent to-black/35 pointer-events-none z-25 rounded-[44px]" />
 
-          {/* Top Status Bar (Under Dynamic Island) */}
-          <div className="pt-3.5 pb-2 px-7 bg-[#1F2C34] text-white flex items-center justify-between text-[11px] font-semibold select-none z-20">
+          {/* Top Status Bar with rounded top matching screen radius (eliminates sharp corner artifact) */}
+          <div className="pt-3.5 pb-2 px-7 bg-[#1F2C34] text-white flex items-center justify-between text-[11px] font-semibold select-none z-20 rounded-t-[44px]">
             {/* Clock */}
             <span className="font-medium tracking-tight">11:15</span>
 
